@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
-
+import FirebaseCore
 @main
 struct CoreMotionAppApp: App {
+    init(){
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            GameScreenView()
+            StartScreenView()
         }
     }
 }
